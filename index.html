@@ -6,11 +6,27 @@
     <title>JS Calculator</title>
 </head>
 <body>
-    <input type="text" id="input">
-    <button onClick="calculate()">Add an operator</button>
-    <div id="result">
+        <!-- Original code that works when you put the operator in,
+        but numbers are staticially set -->
+        <!-- <input type="text" id="input">
+        <button onClick="calculate()">Add an operator</button> -->
+
+        <!-- bad attempt at adding user input -->
+        <input type="text" id="number1" placeholder="Enter a number">
+        <input type="text" id="number2" placeholder="Enter a number">
+        <button type="text" id="operatorPlus" onclick="add()">+</button>
+        <button type="text" id="operatorMinus">-</button>
+        <button type="text" id="operatorDivide">%</button>
+        <button type="text" id="operatorMultiply">x</button>
+        <!-- Calculate button works yay! -->
+        <button type="text" id="equalButton" onClick="calculate()">=</button>
+    
+        <div id="result">
         <!-- result of calculation goes here -->
-    </div>
+
+        </div>
+
+
     <script src="calc.js"></script>
 </body>
 </html>
