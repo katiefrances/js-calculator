@@ -12,48 +12,57 @@ class Calculate {
     }
 
     add() {
-        answer = this.a + this.b;
+        let answer = this.a + this.b;
         console.log(answer);
     }
 
     subtract() {
-        answer = this.a - this.b;
+        let answer = this.a - this.b;
         console.log(answer);
     }
 
     divide() {
-        answer = this.a / this.b;
+        let answer = this.a / this.b;
         console.log(answer);
     }
 
     multiply() {
-        answer = this.a * this.b;
+        let answer = this.a * this.b;
         console.log(answer);
     }
-
 }
 
 function add() {
     a = parseInt(document.getElementById("number1").value);
     b = parseInt(document.getElementById("number2").value);
-    console.log(a + b);
+    let myCalculation = new Calculate(a,b);
+    let thing = myCalculation.add();
+    console.log(thing);
 }
+
 
 function subtract() {
     a = parseInt(document.getElementById("number1").value);
     b = parseInt(document.getElementById("number2").value);
-    console.log(a - b);
+    let myCalculation = new Calculate(a,b);
+    let thing = myCalculation.subtract();
+    console.log(thing);
 }
 
 function divide() {
     a = parseInt(document.getElementById("number1").value);
     b = parseInt(document.getElementById("number2").value);
-    console.log(a / b);
+    let myCalculation = new Calculate(a,b);
+    let thing = myCalculation.divide();
+    console.log(thing);
+    return;
 }
 
 function multiply() {
     a = parseInt(document.getElementById("number1").value);
     b = parseInt(document.getElementById("number2").value);
-    console.log(a * b);
+    let myCalculation = new Calculate(a,b);
+    let thing = myCalculation.multiply();
+    console.log(thing);
 }
 
